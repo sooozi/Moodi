@@ -6,11 +6,11 @@ import "./Login.style.css";
 const Login = () => {
   return (
     <div className="page-container">
-      Login
+      <h2 className="px-w-20px">Login</h2>
       <Form className="px-w-20px">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           {/* <Form.Label>ddd</Form.Label> */}
-          <Form.Control type="email" placeholder="아이디를 입력해주세요." />
+          <Form.Control type="text" placeholder="아이디를 입력해주세요." />
           {/* <Form.Text className="text-muted">
             never share your email with anyone else.
           </Form.Text> */}
