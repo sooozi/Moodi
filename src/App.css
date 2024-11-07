@@ -1,38 +1,46 @@
+/******************
+  [Common]
+******************/
+
+/* [Layout]  */
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.px-w-20px {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .App {
-  text-align: center;
+  max-width: 480px;
+  height: 100vh;
+  margin: 0 auto;
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+/* [Color]  */
+body {
+  background-color: #f2f2f26c;
+  /* background: linear-gradient(11deg, var(--background_dark), var(--background)); */
+}
+.App {
+  background-color: #fff;
+  /* background-color: #000; */
+  /* background: var(--secondary); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --text: hsla(247, 57%, 91%, 1);
+  --text_light: hsla(247, 57%, 91%, 0.9);
+  --text_dark: hsla(247, 57%, 91%, 0.5);
+  --background: rgb(20, 21, 20);
+  --background_dark: rgb(16, 16, 15);
+  --primary: hsla(241, 25%, 50%, 1);
+  --secondary: hsla(247, 8%, 25%, 0.5);
+  --accent: rgb(251, 139, 36);
+  --outline: hsla(247, 5%, 36%, 1);
+  --alert: hsla(360, 60%, 55%, 1);
 }
